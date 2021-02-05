@@ -19,7 +19,7 @@ class BluetoothDevice {
 
   /// Establishes a connection to the Bluetooth Device.
   Future<void> connect({
-    Duration timeout = Duration(seconds: 10),
+    Duration timeout = const Duration(seconds: 10),
     bool autoConnect = true,
   }) async {
     Completer res = Completer();
